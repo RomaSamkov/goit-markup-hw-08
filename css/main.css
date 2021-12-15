@@ -209,14 +209,14 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
 }
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   background: #c4c4c4;
@@ -231,14 +231,21 @@ body {
   margin-bottom: 30px;
   max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   color: var(--primery-white-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
