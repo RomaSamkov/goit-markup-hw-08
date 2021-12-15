@@ -1,5 +1,7 @@
 .social__container {
-  margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .social__title {
   margin-bottom: 20px;
