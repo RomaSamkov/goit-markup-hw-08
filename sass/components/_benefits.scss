@@ -1,7 +1,7 @@
 .benefits__bg {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-right: 100px;
@@ -48,6 +48,9 @@
   text-transform: uppercase;
 
   color: var(--title-text-color);
+  @media screen and (max-width: 720px) {
+    text-align: center;
+  }
 }
 .benefits__text {
   font-size: 14px;
