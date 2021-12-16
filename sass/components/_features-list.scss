@@ -1,7 +1,11 @@
 .features__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    // margin-bottom: 50px;
+  }
 }
 .features__btn {
   border-radius: 4px;
@@ -31,7 +35,9 @@
     border-radius: 4px;
   }
 }
-
+.features__item {
+  margin-top: 15px;
+}
 .features__item:not(:last-child) {
   margin-right: 8px;
 }
