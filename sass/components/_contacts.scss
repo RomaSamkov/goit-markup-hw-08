@@ -5,7 +5,9 @@
   fill: currentColor;
 }
 .contact__phone {
-  margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 .contact__smartphone {
   width: 10px;
@@ -14,8 +16,14 @@
   fill: currentColor;
 }
 .contact__list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__list {
@@ -27,7 +35,10 @@
   }
 }
 .contact {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
