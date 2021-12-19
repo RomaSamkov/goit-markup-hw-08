@@ -1,8 +1,11 @@
 .contact__envelope {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 .contact__phone {
   @media screen and (min-width: 1200px) {
@@ -12,8 +15,11 @@
 .contact__smartphone {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 .contact__list {
   display: none;

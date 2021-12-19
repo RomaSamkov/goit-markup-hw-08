@@ -205,8 +205,14 @@ body {
 .contact__envelope {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__envelope {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -218,8 +224,14 @@ body {
 .contact__smartphone {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__smartphone {
+    margin-right: 10px;
+  }
 }
 
 .contact__list {
@@ -408,16 +420,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .work {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    display: none;
   }
 }
 
