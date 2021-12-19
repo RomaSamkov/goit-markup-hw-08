@@ -139,6 +139,36 @@ body {
   }
 }
 
+.menu-button__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid tomato;
+  background: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button__close {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  padding: 48px 40px;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #ffffff;
+}
+
 .header__nav {
   display: flex;
   align-items: center;
