@@ -4,39 +4,103 @@
   justify-content: space-between;
 }
 .menu-button__open {
-  width: 40px;
-  height: 40px;
   padding: 0;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   background: #ffffff;
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.menu-button__open:hover,
+.menu-button__open:focus {
+  fill: var(--accent-color);
 }
 .menu-button__close {
   position: absolute;
   top: 10px;
   right: 15px;
-  width: 40px;
-  height: 40px;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid tomato;
+  border: none;
   background: #ffffff;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.mobile-menu {
+.menu-button__close:hover,
+.menu-button__close:focus {
+  fill: var(--accent-color);
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   padding: 48px 40px;
   top: 0;
   width: 100vw;
   height: 100vh;
   z-index: 100;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.mobile__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+.mobile-contacts__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mobile-contacts__phone {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.mobile-network__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mobile__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-contacts__list {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+.mobile-contacts__item:first-child {
+  margin-bottom: 32px;
+}
+.mobile-network {
+  display: flex;
+}
+.mobile-network__item:not(:last-child) {
+  margin-right: 20px;
+}
+.active {
+  color: var(--accent-color);
 }
