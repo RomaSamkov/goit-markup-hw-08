@@ -1382,10 +1382,17 @@ body {
   margin-bottom: 30px;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .check__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .check__link {
