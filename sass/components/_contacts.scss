@@ -1,6 +1,10 @@
 .contact__envelope {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
   margin-right: 8px;
   fill: currentColor;
   @media screen and (min-width: 1200px) {
@@ -14,7 +18,11 @@
 }
 .contact__smartphone {
   width: 10px;
-  height: 16px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
   margin-right: 8px;
   fill: currentColor;
   @media screen and (min-width: 1200px) {
@@ -26,6 +34,9 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-left: auto;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
@@ -36,8 +47,11 @@
   .contact {
     color: var(--primery-text-color);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 }
 .contact {
@@ -46,9 +60,10 @@
   }
 
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__list .contact {
@@ -56,4 +71,7 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+.contact__mail {
+  margin-bottom: 10px;
 }

@@ -61,7 +61,7 @@
 
   color: #212121;
 }
-.mobile-contacts__mail {
+.mobile-contacts__phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -69,7 +69,7 @@
 
   color: #2196f3;
 }
-.mobile-contacts__phone {
+.mobile-contacts__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -96,10 +96,21 @@
   margin-bottom: 32px;
 }
 .mobile-network {
-  display: flex;
+  @media screen and(min-width:400px) {
+    display: flex;
+  }
 }
+
 .mobile-network__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.mobile-network__item:not(:last-child)::after {
+  content: '';
+  width: 22px;
+  height: 0px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 .active {
   color: var(--accent-color);

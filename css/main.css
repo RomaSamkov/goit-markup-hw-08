@@ -193,7 +193,7 @@ body {
   color: #212121;
 }
 
-.mobile-contacts__mail {
+.mobile-contacts__phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -201,7 +201,7 @@ body {
   color: #2196f3;
 }
 
-.mobile-contacts__phone {
+.mobile-contacts__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -230,12 +230,23 @@ body {
   margin-bottom: 32px;
 }
 
-.mobile-network {
-  display: flex;
+@media screen and (min-width: 400px) {
+  .mobile-network {
+    display: flex;
+  }
 }
 
 .mobile-network__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.mobile-network__item:not(:last-child)::after {
+  content: '';
+  width: 22px;
+  height: 0px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .active {
@@ -258,13 +269,13 @@ body {
 @media screen and (min-width: 768px) {
   .site__nav {
     display: flex;
-    margin-left: 88px;
+    margin-left: 86px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .site__nav {
-    margin-left: 91px;
+    margin-left: 93px;
   }
 }
 
@@ -306,10 +317,17 @@ body {
 }
 
 .contact__envelope {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 8px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__envelope {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -326,9 +344,16 @@ body {
 
 .contact__smartphone {
   width: 10px;
-  height: 16px;
+  height: 14px;
   margin-right: 8px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -347,6 +372,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__list {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contact__list {
     display: flex;
@@ -357,14 +388,18 @@ body {
 .contact__list .contact {
   color: var(--primery-text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__list .contact {
+    font-size: 14px;
+  }
 }
 
 .contact {
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -374,8 +409,19 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contact__list .contact:hover, .contact__list .contact:focus {
   color: var(--accent-color);
+}
+
+.contact__mail {
+  margin-bottom: 10px;
 }
 
 .hero {
