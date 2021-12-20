@@ -425,9 +425,16 @@ body {
 }
 
 .hero {
-  padding-top: 118px;
+  padding-top: 116px;
   padding-bottom: 118px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
