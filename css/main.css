@@ -776,8 +776,15 @@ body {
 }
 
 .clients {
-  padding-top: 88px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 88px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -882,7 +889,7 @@ body {
   color: var(--primery-white-color);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer__card {
     margin-bottom: 60px;
   }
@@ -938,8 +945,10 @@ body {
   }
 }
 
-.social__container {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .social__container {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
