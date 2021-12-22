@@ -22,15 +22,13 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 .clients__item {
   width: 170px;
   height: 92px;
   flex-basis: calc(100% / 2 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
   }

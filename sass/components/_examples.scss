@@ -1,5 +1,4 @@
 .examples__list {
-  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +6,11 @@
   }
 }
 .examples__items {
-  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
